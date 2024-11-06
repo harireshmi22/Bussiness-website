@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --max-width: calc(100% - 100px);
+  --text-color: rgb(119, 119, 119);
+  --icon-color: rgb(75, 143, 208);
+  --background-color: rgb(20, 35, 54);
+  --heading-color: rgb(0, 0, 0);
+  --button-color: rgb(211, 93, 37);
+  --text-white: #fdfffc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--text-white);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  max-width: var(--max-width);
+  background-color: var(--button-color);
+  margin-top: 1em;
+  margin-inline: auto;
+  border-radius: 1em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+nav {
+  padding: 1rem 1rem;
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.nav__links {
+  display: flex;
+  gap: 2rem;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--text-white);
+  font-size: 18px;
+  font-weight: 6 00;
+}
+
+.section__container {
+  margin-top: 1em;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: 2rem 1rem;
+}
+
+.bg__container {
+  width: 100%;
+  height: 550px;
+  background-color: white;
+}
+
+.header__content .heading {
+  padding: 2rem 0;
+  width: 500px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.header__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+nav .btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--text-white);
+  color: var(--button-color);
+  font-size: 1em;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.section__content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.section__content .btn {
+  padding: 0.5rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--button-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--text-white);
+}
+
+.section__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.service__section {
+  margin-top: 2em;
+}
+
+.service__section h2 {
+  margin-top: -30px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  color: var(--heading-color);
+}
+
+span {
+  color: var(--button-color);
+  font-weight: 700;
+}
+
+.service__section .para {
+  width: 800px;
+  margin-inline: auto;
+  margin-top: 1em;
+  font-size: 1em;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.grid__content {
+  margin-top: 3em;
+  padding: 1em 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.card__content .card {
+  width: 50px;
+  height: 50px;
+}
+
+.card__content .card i {
+  color: var(--button-color);
+  font-size: 2.5em;
+}
+
+.card__content {
+  border-radius: 10px;
+  margin-top: 2em;
+  padding: 1em;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card__content h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.card__content p {
+  font-size: 0.9em;
+  color: var(--text-color);
+}
+
+.card__content button {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: var(--text-white);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.card__content h2,
+p,
+button {
+  text-align: left;
+  margin-top: 1em;
+}
+
+.solution__container {
+  background-color: rgb(252, 237, 230);
+}
+
+.solution__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.solution__image {
+  width: 500px;
+  height: 100%;
+}
+
+.solution__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.solution__card .paras {
+  font-size: 1em;
+  font-weight: 300;
+  width: 400px;
+  color: var(--text-color);
+}
+
+.solution__card h2 {
+  font-size: 2em;
+  font-weight: 800;
+  color: var(--heading-color);
+}
+
+.solution__card {
+  padding: 2em 0;
+}
+
+.solution__card h4 {
+  margin-top: 1em;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.solution__card span {
+  color: var(--button-color);
+  font-weight: 600;
+  line-height: 1em;
+}
+
+.solution__card p {
+  font-size: 0.9em;
+  color: var(--text-color);
+}
+
+.solution__btn {
+  display: flex;
+  padding: 1em 0;
+  gap: 3em;
+}
+
+.solution__btn .btn {
+  background-color: var(--button-color);
+}
+
+.solution__btn .btn-text {
+  color: var(--button-color);
+  background: transparent;
+  border: 2px solid var(--button-color);
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.solution__btn button {
+  padding: 0.5em 1.5em;
+  background-color: var(--button-color);
+  color: var(--text-white);
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*----------------------------Agency Container----------------------------------------------------- */
+
+.content {
+  margin-top: 1em;
+  background-color: rgb(252, 252, 252);
+}
+
+.section__agency {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.agency__content {
+  padding: 5em 0;
+  width: 500px;
+}
+
+.agency__content h2 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.agency__content p {
+  font-size: 1em;
+  color: var(--text-color);
+}
+
+.agency__content button {
+  margin-top: 2em;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  color: var(--text-white);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--button-color);
+}
+
+.agency__image {
+  width: 500px;
+  height: 500px;
+  margin-inline: auto;
+}
+
+.agency__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*--------------------------------Clients Section-------------------------------------------------------------*/
+
+
+.client__container h2 {
+  display: flex;
+  font-size: 3em;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.client__container p {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.wrapper {
+  padding: 3em 1em;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1em 1em;
+  gap: 1em;
+}
+
+.slide {
+  border: 1px solid rgb(255, 123, 0);
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+  border-radius: 10px;
+  padding: 1em 1em;
+}
+
+.slide__image {
+  display: flex;
+  gap: 1em;
+}
+
+.slide__heading h2 {
+  display: flex;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: left;
+  color: var(--heading-color);
+}
+
+.slide__heading h4 {
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.slide p {
+  margin-top: 1em;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.slide__btn button {
+  margin-top: 3em;
+  text-align: center;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  background-color: var(--button-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 400;
+  cursor: pointer;
+  color: var(--text-white);
+}
+
+.slide__image img {
+  width: 75px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/*-------------------------------------------Footer Container--------------------------------------------------*/
+
+.ready__content {
+  margin-top: 1em;
+  padding: 1em 3em;
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  width: 80%;
+  background-color: var(--button-color);
+  border: none;
+  outline: none;
+  border-radius: 1em;
+}
+
+.ready__content button {
+  padding: 0.5em 2em;
+  border: 2px solid var(--text-white);
+  outline: none;
+  font-size: 1em;
+  color: var(--text-white);
+  background: transparent;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ready__content h2 {
+  font-size: 2em;
+  color: var(--text-white);
+  font-weight: 500;
+}
+
+.footer__container {
+  padding: 2em;
+  background-color: blanchedalmond;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__card {
+  padding: 3em;
+}
+
+.footer__card h2 {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.footer__links li a {
+  text-align: left;
+  color: var(--heading-color);
+}
+
+.footer__icon i {
+  margin-top: 3em;
+  font-size: 2em;
+}
+
+.footer__bar {
+  border-top: 1px solid black;
+}
+
+.footer__bar p {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  text-align: center;
+  align-items: center;
+}
